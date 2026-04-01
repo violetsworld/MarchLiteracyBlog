@@ -18,3 +18,9 @@
   width: 40%;
   padding: 5%;
 }
+
+#sinewaves{
+    position:fixed;
+    width:100%;
+    z-index:-10;
+}
