@@ -19,11 +19,11 @@ html, body {
 }
 
 #content1 {
-  visibility: visible;
+  visibility: hidden;
 }
 
 #content2 {
-  visibility: visible;
+  visibility: hidden;
 }
 
 #content3 {
