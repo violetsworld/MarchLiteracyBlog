@@ -1,49 +1,136 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'DM Serif Text';
+  transition: 3s;
 }
 
-#content {
-  margin: 10%;
-  vertical-align: center;
+#content1, #content2, #content3 {
+  position: fixed;
+  display: flex;
+  width:100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: rgba(220,80,20);
 }
 
-#page {
-  width: 100%;
+#content1 {
+  visibility: visible;
+}
+
+#content2 {
+  visibility: visible;
+}
+
+#content3 {
+  visibility: hidden;
+  align-items: center;
+}
+
+#content2 {
+  position: fixed;
+  display: inline;
+  width:100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: rgba(220,80,20);
+}
+
+#sharing, #history {
+  padding: 5%;
+}
+
+
+#c2 {
+  padding: 10%;
+  padding-top: 5%;
+}
+
+#roth, #common {
+  width: 50%;
+  padding: 5%;
 }
 
 #header {
-  text-align: center;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
 }
 
-#roth {
-  float: left;
-  width: 40%;
-  padding: 5%;
+#title {
+  font-size: 48pt;
+  color: rgba(220,80,20);
+  transform: translate(0,-30px);
 }
 
-#common {
-  float: right;
-  width: 40%;
-  padding: 5%;
+#blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 16pt;
+  color: rgba(220,80,20);
 }
+
+#close {
+  position: fixed;
+  top: 10px;
+  right:5%;
+  cursor: pointer;
+  z-index: 30;
+  font-size: 56pt;
+}
+
+
+
 
 #sinewaves{
-    width:100%;
-    z-index:-10;
+  margin-top: 100px;
+  width:1000px;
+  z-index:-10;
 }
 
-#text { 
-  margin-top: 25%;
-  display: float;
+#frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+#text {
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-240px, -5px);
+  width: 100px;
+  height: 40px;
+  background-color: rgba(0,0,0,0);
+  z-index:10;
 }
 
 #writing {
-  margin-top: 5%;
-  display: float;
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-165px, 55px);
+  width: 170px;
+  height: 50px;
+  background-color: rgba(0,0,0,0);
+  z-index:10;
 }
 
-#justice { 
-  margin-top: 5%;
-  display: float;
+#justice {
+  position: absolute;
+  cursor: pointer;
+  transform: translate(-190px, 125px);
+  width: 175px;
+  height: 40px;
+  background-color: rgba(0,0,0,0);
+  z-index:10;
 }
