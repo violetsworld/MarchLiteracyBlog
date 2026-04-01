@@ -2,6 +2,10 @@
   margin: 20%;
 }
 
+#header {
+  text-align: center;
+}
+
 #roth {
   float: left;
   width: 50%;
