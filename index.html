@@ -1,47 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <title>Text Complexity</title>
+  <meta charset="utf-8"/>
+  <link rel='stylesheet' href='style.css'/>
+  <link href="https://fonts.googleapis.com/css2?display=swap&family=Delicious+Handrawn:ital,wght@0,400;1,400&family=Didact+Gothic:ital,wght@0,400;1,400&family=DM+Serif+Text:ital,wght@0,400;1,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
 </head>
+
+
+
+
+
 <body>
 
-  <h1>March Literacy Blog (under construction, graphics and animation coming soon!)</h1>
-  <h2>What Is a Text and How Complex Is It?</h2>
-  <p>In "The Complex Matter of Text Complexity," Robert Rothman comments on research that points to declining complexity in high school texts despite steady or increasing complexity in entry level college texts.  He explains how the selection process of choosing texts has also shifted from using texts written and tailored to a specific reading level, to choosing appropriately complex commercially available texts.  Regardless of where the texts are sourced from, complexity is not a simple issue.  While vocabulary and sentence structure are important, there are other factors such as layers of meaning or student familiarity with the content, that determine how complex a text is.  
+<script>
+  function hide() {
+    document.getElementById("content1").style.cssText = "visibility: hidden !important; color: rgba(0,0,0,0); background-color: rgba(0,0,0,0); transition: ease 1s;";
+    document.getElementById("content2").style.cssText = "visibility: hidden !important; color: rgba(0,0,0,0); background-color: rgba(0,0,0,0); transition: ease 1s;";
+    document.getElementById("content3").style.cssText = "visibility: hidden !important; color: rgba(0,0,0,0); background-color: rgba(0,0,0,0); transition: ease 1s;";
+    document.getElementById("close").style.cssText = "visibility: hidden !important; transition: ease 1s;";
+  }
 
-In the Appendix A of "Common Core State Standards for English Language Arts & Literacy in History/Social Studies, Science, and Technical Subjects," the authors cite much of the research summarized by Rothman, and also outline a three part model for measuring text complexity:
-  </p><p>
-Quantitative: Systematically scoring the length and frequency of words, length of sentences, syntax, and cohesion.  Formulas like the Lexile Framework for Reading can place both readers and text on a complexity scale.  Quantitative measurements are limited in their ability to factor content into their scoring.  
-</p><p>
-Qualitative: More easily measured by a human reader, factors that affect qualitative complexity are levels of meaning or purpose, structure, language conventionality and clarity, and knowledge demands.
-</p><p>
-Reader and Task: In addition to using quantitative and qualitative metrics to rate the complexity of a text, educators are expected to use their professional judgement in order to choose an appropriate text for specific students and tasks.  </p>
-<h2>Writing, Writing, Writing</h2>
-<p>
-Despite doing so from differing frameworks, "Writing as a Mode of Learning" and "Teaching Writing by Writing" both make the case for writing as an educational tool. Furthermore, both texts align with Zwier's methods of helping students acquire academic language.  
-</p><p>
-In "Writing as a Mode of Learning," Janet Emig separates writing from speaking, listening, and reading, and then highlights how the distinctions of writing make it particularly conducive to learning.  During writing in particular, one creates an <em>original</em> verbal construct AND records it graphically. 
+  function unhide1() {
+    document.getElementById("content1").style.cssText = "visibility: visible !important; color: rgba(220,80,20,1); background-color: rgba(256,256,256,1); transition: ease 1s;";
+    document.getElementById("close").style.cssText = "visibility: visible !important; color: rgba(220,80,20,1);transition: ease 1s;";
+  }
 
-</p>
-<p>
-Four specific characteristics of successful learning strategies are met through writing according to Emig.  
-</p>
-	<p>
-	1. Writing is multi representational, integrating verbal, visual and tactile representations.  
-	</p>
-	<p>
-	2. Writing provides both short and long term feedback through review and re-evaluation.
-	</p>
-	<p>
-	3. Writing connects concepts through vocabulary, syntax, and rhetoric.
-	</p>
-	<p>
-	4. Writing is active, engaged, and personal—specifically, self-rhythmed
-	</p>
+  function unhide2() {
+    document.getElementById("content2").style.cssText = "visibility: visible !important; color: rgba(220,80,20,1);background-color: rgba(256,256,256,1); transition: ease 1s;";
+    document.getElementById("close").style.cssText = "visibility: visible !important; color: rgba(220,80,20,1);background-color: rgba(256,256,256,1); transition: ease 1s;";
+  }
 
-<p>In "Teaching Writing by Writing," James Moffett argues that language is learned through trial and error.  In learning to speak, a child tries to communicate, and receives feedback from the person they are communicating to.  In doing so repetitively, they are able to use the responses that they get from others to speak more effectively.  Learning to write is no different than learning to speak, Moffett says.  Children must write, have their writing read, and get feedback on it.  The most effective feedback is from their peers, whose opinions are valued, non-authoritative, and multiple.  Moffett therefore denounces textbook learning for writing, emphasizing the notion of learning by doing that is frequently deemed effective by learning theorists.  
-</p>
-<h2>Learning From Black Language and Literacy</h2>
+  function unhide3() {
+    document.getElementById("content3").style.cssText = "visibility: visible !important; color: rgba(220,80,20,1);background-color: rgba(256,256,256,1); transition: ease 1s;";
+    document.getElementById("close").style.cssText = "visibility: visible !important; color: rgba(220,80,20,1);background-color: rgba(256,256,256,1); transition: ease 1s;";
+  }
+
+
+</script>
+
+
+<div id="header"><h1 id="title">March Literacy Blog</h1></div>
+<div id="frame">
+<video autoplay muted loop id="sinewaves">
+            <source src="Dream.MP4" type="video/mp4">
+</video>
+<div id="text" onclick="unhide1()"></div>
+<div id="writing" onclick="unhide2()"></div>
+<div id="justice" onclick="unhide3()"></div>
+</div>
+
+<div id="blurb">homemade alphabet soup, cooked up by yours truly, and packed with ingredients for successful literacy education</div>
+
+
+
+
+
+<div id="content1">
+
+<div id="roth">
+<h1>Complex Flavors!</h1><h4>Mild to Spicy, Salty to Sweet</h4>
+  <p>In "The Complex Matter of Text Complexity," Robert Rothman comments on research that points to declining complexity in high school texts despite steady or increasing complexity in entry level college texts.  He explains how the selection process of choosing texts has also shifted from using texts written and tailored to a specific reading level, to choosing appropriately complex commercially available texts.  Regardless of where the texts are sourced from, complexity is not a simple issue.  While vocabulary and sentence structure are important, there are other factors such as layers of meaning or student familiarity with the content, that determine how complex a text is.</p>  
+  <p>In the Appendix A of "Common Core State Standards for English Language Arts & Literacy in History/Social Studies, Science, and Technical Subjects," the authors cite much of the research summarized by Rothman, and also outline a three part model for measuring text complexity: Qualitative, Quantitative, Reader and Task. </p>
+</div>
+
+<div id="common">
+<div>
+  <h3>Quantitative</h3>
+  Systematically scoring the length and frequency of words, length of sentences, syntax, and cohesion.  Formulas like the Lexile Framework for Reading can place both readers and text on a complexity scale.  Quantitative measurements are limited in their ability to factor content into their scoring.  
+</div>
+
+<div>
+  <h3>Qualitative</h3>
+  More easily measured by a human reader, factors that affect qualitative complexity are levels of meaning or purpose, structure, language conventionality and clarity, and knowledge demands.
+</div>
+
+<div>
+  <h3>Reader and Task</h3>
+  In addition to using quantitative and qualitative metrics to rate the complexity of a text, educators are expected to use their professional judgement in order to choose an appropriate text for specific students and tasks.  </p>
+</div>
+
+</div>
+
+
+
+
+<div id="content2">
+
+<div id="c2">
+<div id="emig">
+<h1>Season, Taste, Season, Taste...</h1>
+<p>Despite doing so from differing frameworks, "Writing as a Mode of Learning" and "Teaching Writing by Writing" both make the case for writing as an educational tool. Furthermore, both texts align with Zwier's methods of helping students acquire academic language.  </p>
+
+<p>In "Writing as a Mode of Learning," Janet Emig separates writing from speaking, listening, and reading, and then highlights how the distinctions of writing make it particularly conducive to learning.  During writing in particular, one creates an <em>original</em> verbal construct AND records it graphically.  </p>
+
+<p> Four specific characteristics of successful learning strategies are met through writing according to Emig:</p>
+
+<ol>
+<li>Writing is multi representational, integrating verbal, visual and tactile representations.</li>
+<li>Writing provides both short and long term feedback through review and re-evaluation.</li>
+<li>Writing connects concepts through vocabulary, syntax, and rhetoric.</li>
+<li> Writing is active, engaged, and personal—specifically, self-rhythmed.</li>
+</ol>
+
+</div>
+<div id="moffett">
+<h1>Read, Write, Read, Write...</h1>
+<p>In "Teaching Writing by Writing," James Moffett argues that language is learned through trial and error.  In learning to speak, a child tries to communicate, and receives feedback from the person they are communicating to.  In doing so repetitively, they are able to use the responses that they get from others to speak more effectively.  Learning to write is no different than learning to speak, Moffett says.  Children must write, have their writing read, and get feedback on it.  The most effective feedback is from their peers, whose opinions are valued, non-authoritative, and multiple.  Moffett therefore denounces textbook learning for writing, emphasizing the notion of learning by doing that is frequently deemed effective by learning theorists.  </p
+
+<br>
+<h3>Write that down, write that down!!</h3>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div id="content3">
+<div id="sharing">
+<h2>Sharing Recipes: Learning From Black Language, History, and Literacy</h2>
 <p>
 In chapters 3 and 5 of "Linguistic Justice," Baker-Bell cites responses and conversations with students about an attitudinal assessment to show how Anti-Black Linguistic Racism is internalized, and how it shifted towards Black Linguistic Consciousness.  Students were asked to create a characters for two contrasting language samples, one Black Language and one White Mainstream English, revealing how they were taught to perceive each.  
 </p>
@@ -51,6 +131,8 @@ The initial results were saddening as students echoed many of the racist stereot
 <p>
 After learning about the history and cultural significance of Black Language, the students' change in attitudes were documented in chapter 5, "Black Linguistic Consciousness." They were able to resist Anti-Black Linguistic Racism and articulate the feelings that they held about Black Language.  Furthermore, they understood Black Language as being a valid language with rich cultural roots and complex characteristics.  
 </p>
+</div>
+<div id="history">
 <p>
 The history of literacy in Black communities is central to the beginning of Gholdy Muhammad's book "Cultivating Genius."  Just as Baker-Bell highlighted the ways in which Black Language has characteristics beyond White Mainstream English, Muhammad detailed literacy definitions from Black Literary Societies that were far more expansive than that of the modern school system.  She outlines 10 lessons that can be learned from those Black Literary Societies:
 </p>
@@ -69,5 +151,13 @@ The history of literacy in Black communities is central to the beginning of Ghol
 <p>
 After reading these practices and views that were commonplace in Black Literary Societies, literacy education in school today seems hollow.  Much of what makes literacy worthwhile — joy, collaboration, diversity, social practices, critique, political participation, etc. — is now absent in schools, perhaps because the value these bring does not serve the status quo: white capitalist hegemony.  </p>
   
+</div>
+</div>
+
+<div id="close" onclick="hide()">
+X
+<div>
+
+
 </body>
 </html>
