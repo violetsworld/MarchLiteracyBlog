@@ -1,5 +1,5 @@
 #content {
-  margin: 20%;
+  margin: 10%;
 }
 
 #header {
@@ -8,12 +8,12 @@
 
 #roth {
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 5%;
 }
 
 #common {
   float: right;
-  width: 50%;
+  width: 40%;
   padding: 5%;
 }
